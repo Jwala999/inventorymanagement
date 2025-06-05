@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Ensure the body takes full height and has no default margin */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif; /* Use a clean, modern font */
+}
+
+/* Enhance the sidebar for categories */
+.sidebar {
+  background-color: #f9fafb; /* Light gray background for contrast */
+  border-right: 1px solid #e5e7eb; /* Subtle border */
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li {
+  transition: background-color 0.2s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: #e5e7eb; /* Light hover effect */
+}
+
+/* Style for product cards */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+.product-card img {
+  object-fit: cover; /* Ensure images fit nicely */
+  transition: opacity 0.3s ease;
+}
+
+.product-card img:hover {
+  opacity: 0.9; /* Subtle dim effect on hover */
+}
+
+/* Custom button styles to complement Tailwind */
+.btn-custom {
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.btn-custom:active {
+  transform: scale(0.95); /* Pressed effect */
+}
+
+/* Profile photo styling */
+.profile-photo {
+  border: 2px solid #3b82f6; /* Blue border to match theme */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Cart item styling */
+.cart-item {
+  transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+  background-color: #f3f4f6; /* Light gray hover effect */
+}
+
+/* Ensure images in product list and cart are responsive */
+.product-image, .cart-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom input focus styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Blue focus ring */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .product-card {
+    margin: 0 auto; /* Center product cards on mobile */
+  }
+
+  .flex-1 {
+    padding: 1rem; /* Reduce padding on mobile */
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+button, a {
+  transition: all 0.2s ease;
+}
+
+/* Ensure the container has a max-width for better readability */
+.container {
+  max-width: 1200px;
+}
+
+/* Fix for Tailwind and Bootstrap conflict on buttons */
+.btn {
+  border: none; /* Remove Bootstrap's default border */
+}
+
+/* Add subtle animation for alerts */
+.alert {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+}
+.product-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+.btn-custom {
+  transition: background-color 0.3s ease;
+}
+.dropdown-menu {
+  position: absolute;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  z-index: 10;
+}
