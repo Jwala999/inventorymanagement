@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.9/babel.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script src="src/firebaseConfig.js"></script>
+  <script type="text/babel" src="src/App.jsx"></script>
+  <script type="text/babel" src="src/Navigation.jsx"></script>
+  <script type="text/babel" src="src/Login.jsx"></script>
+  <script type="text/babel" src="src/Signup.jsx"></script>
+  <script type="text/babel" src="src/ResetPassword.jsx"></script>
+  <script type="text/babel" src="src/Dashboard.jsx"></script>
+  <script type="text/babel" src="src/Categories.jsx"></script>
+  <script type="text/babel" src="src/Products.jsx"></script>
+  <script type="text/babel" src="src/Cart.jsx"></script>
+  <script type="text/babel">
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
